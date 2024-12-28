@@ -35,7 +35,7 @@ Data: `~/.local/share/nvim`
 - [Telescope FZF Native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 - [CMake](https://cmake.org/download/)
 - [fd](https://github.com/sharkdp/fd)
-
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 
 

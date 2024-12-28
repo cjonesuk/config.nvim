@@ -34,6 +34,8 @@ return {
 
         require('telescope.builtin').find_files(opts)
       end)
+
+      require("custom.telescope.multigrep").setup()
     end
   }
 }
