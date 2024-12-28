@@ -26,8 +26,8 @@ Data: `~/.local/share/nvim`
 
 ### Telescope
 
-- (Telescope FZF Native)[https://github.com/nvim-telescope/telescope-fzf-native.nvim]
-- (CMake)[https://cmake.org/download/]
-- (fd)[https://github.com/sharkdp/fd]
+- [Telescope FZF Native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+- [CMake](https://cmake.org/download/)
+- [fd](https://github.com/sharkdp/fd)
 
 
