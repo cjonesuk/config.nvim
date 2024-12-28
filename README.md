@@ -21,3 +21,13 @@ Data: `~/.local/share/nvim`
 - Tokionight theme
 - basic lua settings
 
+
+## Dependencies
+
+### Telescope
+
+- (Telescope FZF Native)[https://github.com/nvim-telescope/telescope-fzf-native.nvim]
+- (CMake)[https://cmake.org/download/]
+- (fd)[https://github.com/sharkdp/fd]
+
+

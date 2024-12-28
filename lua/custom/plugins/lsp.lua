@@ -1,6 +1,7 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    enabled = true,
     dependencies = {
       {
         "folke/lazydev.nvim",
@@ -16,7 +17,6 @@ return {
     },
     config = function()
       require("lspconfig").lua_ls.setup {}
-
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
