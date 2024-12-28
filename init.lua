@@ -3,6 +3,7 @@ require("custom.lazy")
 vim.opt.shiftwidth = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.clipboard = "unnamedplus"
 
 -- Executing lua
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
