@@ -1,5 +1,3 @@
-print "Loading cjonesuk nvim config..." 
-
 require("custom.lazy")
 
 vim.opt.shiftwidth = 4
@@ -19,6 +17,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 	vim.highlight.on_yank()
     end,
 })
-
-print "Finished loading nvim config!"
 
