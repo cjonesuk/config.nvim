@@ -27,6 +27,7 @@ Data: `~/.local/share/nvim`
 - LSP configuration for 
     - typescript & react
     - rust
+- Investigate [mini.files](https://github.com/echasnovski/mini.files) as a replacement for Oil
 
 ## Dependencies
 
