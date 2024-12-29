@@ -30,6 +30,10 @@ Data: `~/.local/share/nvim`
 
 ## Dependencies
 
+### LSP
+
+- [Luals](https://luals.github.io/#neovim-install)
+
 ### Telescope
 
 - [Telescope FZF Native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
