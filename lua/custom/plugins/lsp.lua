@@ -19,7 +19,16 @@ return {
     config = function()
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
-      require("lspconfig").lua_ls.setup { capabilities = capabilities }
+      local nvim_lsp = require("lspconfig")
+      -- Lua
+      nvim_lsp.lua_ls.setup { capabilities = capabilities }
+
+      -- TypeScript
+      nvim_lsp.ts_ls.setup {
+        -- on_attach = on_attach,
+        -- filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+        -- cmd = { "typescript-language-server", "--stdio" }
+      }
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
