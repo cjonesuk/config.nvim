@@ -18,8 +18,11 @@ Data: `~/.local/share/nvim`
 
 - lazy package manager
 - mini.nvim status line
-- Tokionight theme
+- tokionight theme
 - basic lua settings
+- telescope.nvim
+- nvim-lspconfig
+- blink.cmp for code completion
 
 ## Todo
 
@@ -28,6 +31,13 @@ Data: `~/.local/share/nvim`
     - typescript & react
     - rust
 - Investigate [mini.files](https://github.com/echasnovski/mini.files) as a replacement for Oil
+
+## Use cases
+
+- Typescript & React for web
+- Rust for desktop and server
+- C# and dotnet for desktop and servers
+- Lua for neovim configuration
 
 ## Dependencies
 
