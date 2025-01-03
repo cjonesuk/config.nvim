@@ -7,20 +7,21 @@ return {
     config = function()
       local conform = require("conform")
 
+      local use_prettier = { "prettierd", "prettier", stop_after_first = true }
+
       conform.setup({
         formatters_by_ft = {
-          lua = { "stylua" },
-          javascript = { "prettier" },
-          typescript = { "prettier" },
-          javascriptreact = { "prettier" },
-          typescriptreact = { "prettier" },
-          svelte = { "prettier" },
-          css = { "prettier" },
-          html = { "prettier" },
-          json = { "prettier" },
-          yaml = { "prettier" },
-          markdown = { "prettier" },
-          graphql = { "prettier" },
+          javascript = use_prettier,
+          typescript = use_prettier,
+          javascriptreact = use_prettier,
+          typescriptreact = use_prettier,
+          svelte = use_prettier,
+          css = use_prettier,
+          html = use_prettier,
+          json = use_prettier,
+          yaml = use_prettier,
+          markdown = use_prettier,
+          graphql = use_prettier,
           lua = { "stylua" },
           python = { "isort", "black" },
         },

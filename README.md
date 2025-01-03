@@ -7,7 +7,7 @@ Personal Neovim configuration
 ### Windows
 
 Config: `~/AppData/Local/nvim`
-Data: `~/AppData/Local/nvim-data` 
+Data: `~/AppData/Local/nvim-data`
 
 ### Mac OS
 
@@ -22,14 +22,14 @@ Data: `~/.local/share/nvim`
 - basic lua settings
 - telescope.nvim
 - nvim-lspconfig
-- blink.cmp for code completion
+- mason, mason-lspconfig and mason tool installer
 
 ## Todo
 
 - Telescope fzf configuration (see https://github.com/nvim-telescope/telescope-fzf-native.nvim)
-- LSP configuration for 
-    - typescript & react
-    - rust
+- LSP configuration for
+  - typescript & react
+  - rust
 - Investigate [mini.files](https://github.com/echasnovski/mini.files) as a replacement for Oil
 
 ## Use cases
@@ -51,6 +51,3 @@ Data: `~/.local/share/nvim`
 - [CMake](https://cmake.org/download/)
 - [fd](https://github.com/sharkdp/fd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
-
-
-

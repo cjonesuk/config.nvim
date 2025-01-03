@@ -28,11 +28,11 @@ return {
           "lua_ls",
           "ts_ls",
         },
+        automatic_installation = false,
       })
 
       mason_tool_installer.setup({
         ensure_installed = {
-          "lua-language-server",
           "stylua",
           "prettier",
           "isort",
