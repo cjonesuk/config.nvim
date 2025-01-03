@@ -23,6 +23,7 @@ Data: `~/.local/share/nvim`
 - telescope.nvim
 - nvim-lspconfig
 - mason, mason-lspconfig and mason tool installer
+- blink.cmp for completions
 
 ## Todo
 
