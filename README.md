@@ -52,3 +52,8 @@ Data: `~/.local/share/nvim`
 - [CMake](https://cmake.org/download/)
 - [fd](https://github.com/sharkdp/fd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+
+### Colour Scheme
+
+- [Kanagawa](https://github.com/rebelot/kanagawa.nvim) (currently active)
+- [Tokyonight](https://github.com/folke/tokyonight.nvim)
