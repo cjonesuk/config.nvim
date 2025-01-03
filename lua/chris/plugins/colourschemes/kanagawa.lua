@@ -8,6 +8,7 @@ return {
       local kanagawa = require("kanagawa")
 
       kanagawa.setup({
+        transparent = true,
         theme = "dragon",
         background = {
           dark = "dragon",
