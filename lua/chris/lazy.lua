@@ -17,14 +17,10 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
--- Configure vim options
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    { "folke/tokyonight.nvim",  config = function() vim.cmd.colorscheme "tokyonight" end },
-    { import = "custom.plugins" },
+    { import = "chris.plugins" },
+    { import = "chris.plugins.lsp" }
   },
 })
