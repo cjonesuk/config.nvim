@@ -3,7 +3,6 @@ vim.hl = vim.highlight
 
 require("chris.core")
 require("chris.lazy")
--- require("custom.lazy")
 
 -- -- Options
 -- vim.opt.shiftwidth = 4
