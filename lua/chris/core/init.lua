@@ -1,5 +1,3 @@
--- Configure vim options
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
+require("chris.core.options")
+require("chris.core.keymaps")
 require("chris.core.commands")
