@@ -1,6 +1,6 @@
 return {
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     ---@module 'oil'
     ---@type oil.SetupOpts
     opts = {},
@@ -12,6 +12,6 @@ return {
       require("oil").setup()
 
       vim.keymap.set("n", "-", "<cmd>Oil<CR>")
-    end
-  }
+    end,
+  },
 }
