@@ -6,7 +6,7 @@ return {
     config = function()
       local lint = require("lint")
 
-      local use_eslint = { "eslint_d" }
+      local use_eslint = { "eslint_d", "eslint" }
 
       lint.linters_by_ft = {
         javascript = use_eslint,

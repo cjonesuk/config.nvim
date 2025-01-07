@@ -2,9 +2,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Executing lua
-vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<space>x", ":.lua<CR>")
-vim.keymap.set("v", "<space>x", ":lua<CR>")
+-- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
+-- vim.keymap.set("n", "<space>x", ":.lua<CR>")
+-- vim.keymap.set("v", "<space>x", ":lua<CR>")
 
 -- Quick list navigation
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
