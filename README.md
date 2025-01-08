@@ -24,6 +24,7 @@ Data: `~/.local/share/nvim`
 - nvim-lspconfig
 - mason, mason-lspconfig and mason tool installer
 - blink.cmp for completions
+- snacks.nvim (currently layygit integration)
 
 ## Todo
 
@@ -41,6 +42,10 @@ Data: `~/.local/share/nvim`
 - Lua for neovim configuration
 
 ## Dependencies
+
+### Tooling
+
+- [Lazygit](https://github.com/jesseduffield/lazygit)
 
 ### LSP
 
