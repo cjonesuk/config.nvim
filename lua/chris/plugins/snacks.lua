@@ -3,6 +3,13 @@ return {
   priority = 1000,
   lazy = false,
   enabled = true,
+  dependencies = {
+    {
+      "folke/edgy.nvim",
+      event = "VeryLazy",
+      opts = {},
+    },
+  },
   ---@type snacks.Config
   opts = {
     lazygit = {
@@ -19,6 +26,9 @@ return {
       enabled = true,
     },
     scroll = {
+      enabled = true,
+    },
+    terminal = {
       enabled = true,
     },
   },
@@ -44,6 +54,20 @@ return {
       end,
       desc = "Git Browse",
       mode = { "n", "v" },
+    },
+    {
+      "<c-/>",
+      function()
+        Snacks.terminal()
+      end,
+      desc = "Toggle Terminal",
+    },
+    {
+      "<c-_>",
+      function()
+        Snacks.terminal()
+      end,
+      desc = "which_key_ignore",
     },
   },
 }
