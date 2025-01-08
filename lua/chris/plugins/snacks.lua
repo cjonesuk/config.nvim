@@ -8,6 +8,13 @@ return {
     lazygit = {
       enabled = true,
     },
+    notifier = {
+      enabled = true,
+      timeout = 3000,
+    },
+    bigfile = {
+      enabled = true,
+    },
   },
   keys = {
     {
@@ -16,6 +23,21 @@ return {
         Snacks.lazygit()
       end,
       desc = "Lazygit",
+    },
+    {
+      "<leader>gb",
+      function()
+        Snacks.git.blame_line()
+      end,
+      desc = "Git Blame line",
+    },
+    {
+      "<leader>gB",
+      function()
+        Snacks.gitbrowse()
+      end,
+      desc = "Git Browse",
+      mode = { "n", "v" },
     },
   },
 }
