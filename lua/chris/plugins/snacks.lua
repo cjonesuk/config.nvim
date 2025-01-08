@@ -15,6 +15,12 @@ return {
     bigfile = {
       enabled = true,
     },
+    input = {
+      enabled = true,
+    },
+    scroll = {
+      enabled = true,
+    },
   },
   keys = {
     {
