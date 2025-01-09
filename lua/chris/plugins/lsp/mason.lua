@@ -1,9 +1,9 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
     enabled = true,
     dependencies = {
-      "williamboman/mason-lspconfig.nvim",
+      "williamboman/mason.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
     },
     config = function()
@@ -26,7 +26,6 @@ return {
       mason_lspconfig.setup({
         ensure_installed = {
           "lua_ls",
-          "ts_ls",
           "rust_analyzer",
         },
         automatic_installation = false,
