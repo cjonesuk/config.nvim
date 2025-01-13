@@ -17,6 +17,7 @@ return {
           "query",
           "markdown",
           "markdown_inline",
+          "rust",
         },
         auto_install = false,
 
@@ -27,4 +28,5 @@ return {
       })
     end,
   },
+  { "nvim-treesitter/nvim-treesitter-textobjects" },
 }

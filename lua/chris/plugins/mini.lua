@@ -12,6 +12,7 @@ return {
       custom_textobjects = {
         -- Function definition (needs treesitter queries with these captures)
         F = gen_spec.treesitter({ a = "@function.outer", i = "@function.inner" }),
+        C = gen_spec.treesitter({ a = "@class.outer", i = "@class.inner" }),
       },
     })
   end,
