@@ -17,22 +17,19 @@ Data: `~/.local/share/nvim`
 ## Features
 
 - lazy package manager
-- mini.nvim status line
-- tokionight theme
+- mini.nvim: status line, ai (for improved text objects) and move
+- kanagawa theme
 - basic lua settings
 - telescope.nvim
 - nvim-lspconfig
 - mason, mason-lspconfig and mason tool installer
 - blink.cmp for completions
 - snacks.nvim (currently layygit integration)
+- typescript-tools for improved language server support
 
 ## Todo
 
-- Telescope fzf configuration (see https://github.com/nvim-telescope/telescope-fzf-native.nvim)
-- LSP configuration for
-  - typescript & react
-  - rust
-- Investigate [mini.files](https://github.com/echasnovski/mini.files) as a replacement for Oil
+- Investigate debugging setup
 
 ## Use cases
 
