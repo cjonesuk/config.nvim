@@ -2,17 +2,12 @@
 
 Personal Neovim configuration
 
-## Directories
+## Use cases
 
-### Windows
-
-Config: `~/AppData/Local/nvim`
-Data: `~/AppData/Local/nvim-data`
-
-### Mac OS
-
-Config: `~/.config/nvim`
-Data: `~/.local/share/nvim`
+- Typescript & React for web
+- Rust for desktop and server
+- C# and dotnet for desktop and servers
+- Lua for neovim configuration
 
 ## Features
 
@@ -30,13 +25,6 @@ Data: `~/.local/share/nvim`
 ## Todo
 
 - Investigate debugging setup
-
-## Use cases
-
-- Typescript & React for web
-- Rust for desktop and server
-- C# and dotnet for desktop and servers
-- Lua for neovim configuration
 
 ## Dependencies
 
@@ -58,3 +46,15 @@ Data: `~/.local/share/nvim`
 ### Colour Scheme
 
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim) (currently active)
+
+## Directories
+
+### Windows
+
+Config: `~/AppData/Local/nvim`
+Data: `~/AppData/Local/nvim-data`
+
+### Mac OS
+
+Config: `~/.config/nvim`
+Data: `~/.local/share/nvim`
