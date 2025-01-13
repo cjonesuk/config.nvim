@@ -58,4 +58,3 @@ Data: `~/.local/share/nvim`
 ### Colour Scheme
 
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim) (currently active)
-- [Tokyonight](https://github.com/folke/tokyonight.nvim)
