@@ -4,6 +4,7 @@ return {
   config = function()
     local statusline = require("mini.statusline")
     local ai = require("mini.ai")
+    local move = require("mini.move")
     local gen_spec = ai.gen_spec
 
     statusline.setup({ use_icons = true })
@@ -15,5 +16,7 @@ return {
         C = gen_spec.treesitter({ a = "@class.outer", i = "@class.inner" }),
       },
     })
+
+    move.setup({})
   end,
 }
