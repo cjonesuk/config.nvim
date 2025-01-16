@@ -26,6 +26,11 @@ return {
 
       vim.keymap.set("n", "<space>fh", require("telescope.builtin").help_tags)
       vim.keymap.set("n", "<space>ff", require("telescope.builtin").find_files)
+      vim.keymap.set("n", "<space>fF", function()
+        require("telescope.builtin").find_files({
+          hidden = true,
+        })
+      end)
       vim.keymap.set("n", "<space>fb", require("telescope.builtin").buffers)
       vim.keymap.set("n", "<space>fn", function()
         local opts = require("telescope.themes").get_ivy({
@@ -35,7 +40,7 @@ return {
         require("telescope.builtin").find_files(opts)
       end)
 
-      require("custom.telescope.multigrep").setup()
+      require("custom.telescope.multigrep").setup(require("telescope.themes").get_ivy())
     end,
   },
 }
