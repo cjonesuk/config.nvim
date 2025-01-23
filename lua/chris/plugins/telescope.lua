@@ -24,13 +24,40 @@ return {
 
       require("telescope").load_extension("fzf")
 
-      vim.keymap.set("n", "<space>fh", require("telescope.builtin").help_tags)
-      vim.keymap.set("n", "<space>ff", require("telescope.builtin").find_files)
+      function vim.getVisualSelection()
+        vim.cmd('noau normal! "vy"')
+        local text = vim.fn.getreg("v")
+        vim.fn.setreg("v", {})
+
+        text = string.gsub(text, "\n", "")
+        if #text > 0 then
+          return text
+        else
+          return ""
+        end
+      end
+
+      local tb = require("telescope.builtin")
+
+      vim.keymap.set("n", "<space>fh", tb.help_tags)
+
+      vim.keymap.set("n", "<space>ff", tb.find_files)
+      vim.keymap.set("v", "<space>ff", function()
+        tb.find_files({ default_text = vim.getVisualSelection() })
+      end)
+
       vim.keymap.set("n", "<space>fF", function()
         require("telescope.builtin").find_files({
           hidden = true,
         })
       end)
+      vim.keymap.set("v", "<space>fF", function()
+        require("telescope.builtin").find_files({
+          hidden = true,
+          default_text = vim.getVisualSelection(),
+        })
+      end)
+
       vim.keymap.set("n", "<space>fb", require("telescope.builtin").buffers)
       vim.keymap.set("n", "<space>fn", function()
         local opts = require("telescope.themes").get_ivy({
@@ -40,7 +67,15 @@ return {
         require("telescope.builtin").find_files(opts)
       end)
 
-      require("custom.telescope.multigrep").setup(require("telescope.themes").get_ivy())
+      vim.keymap.set("n", "<leader>fg", require("custom.telescope.multigrep").live_multigrep)
+      vim.keymap.set("v", "<leader>fg", function()
+        local opts = require("telescope.themes").get_ivy({
+          default_text = vim.getVisualSelection(),
+        })
+        require("custom.telescope.multigrep").live_multigrep(opts)
+      end)
+
+      vim.keymap.set("n", "<space>fc", require("telescope.builtin").resume)
     end,
   },
 }
