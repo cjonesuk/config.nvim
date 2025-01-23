@@ -25,6 +25,7 @@ return {
           lua = { "stylua" },
           python = { "isort", "black" },
           rust = { "rustfmt", lsp_format = "fallback" },
+          sql = { "sqlfmt" },
         },
         format_on_save = {
           lsp_format = "fallback",

@@ -10,6 +10,7 @@ return {
           "c",
           "lua",
           "javascript",
+          "sql",
           "typescript",
           "tsx",
           "vim",
