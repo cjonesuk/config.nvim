@@ -31,6 +31,9 @@ return {
     terminal = {
       enabled = true,
     },
+    zen = {
+      enabled = true,
+    },
   },
   keys = {
     {
@@ -68,6 +71,20 @@ return {
         Snacks.terminal()
       end,
       desc = "which_key_ignore",
+    },
+    {
+      "<leader>z",
+      function()
+        Snacks.zen.zoom()
+      end,
+      desc = "Toggle Zoom",
+    },
+    {
+      "<leader>Z",
+      function()
+        Snacks.zen()
+      end,
+      desc = "Toggle Zen mode",
     },
   },
 }
