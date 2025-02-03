@@ -75,14 +75,28 @@ return {
     {
       "<leader>z",
       function()
-        Snacks.zen.zoom()
+        Snacks.zen.zoom({
+          toggles = {
+            dim = false,
+          },
+          win = {
+            width = 240,
+          },
+        })
       end,
       desc = "Toggle Zoom",
     },
     {
       "<leader>Z",
       function()
-        Snacks.zen()
+        Snacks.zen({
+          toggles = {
+            dim = false,
+          },
+          win = {
+            width = 0,
+          },
+        })
       end,
       desc = "Toggle Zen mode",
     },
