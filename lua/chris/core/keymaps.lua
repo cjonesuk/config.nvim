@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Delete default keymaps
+vim.keymap.set("n", "J", "<Nop>")
+
 -- Executing lua
 -- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 -- vim.keymap.set("n", "<space>x", ":.lua<CR>")
