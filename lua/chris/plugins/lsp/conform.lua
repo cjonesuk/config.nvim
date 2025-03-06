@@ -8,13 +8,14 @@ return {
       local conform = require("conform")
 
       local use_prettier = { "prettierd", "prettier", stop_after_first = true }
+      local use_standard_web_dev = { "prettierd", "eslint_d" }
 
       conform.setup({
         formatters_by_ft = {
-          javascript = use_prettier,
-          typescript = use_prettier,
-          javascriptreact = use_prettier,
-          typescriptreact = use_prettier,
+          javascript = use_standard_web_dev,
+          typescript = use_standard_web_dev,
+          javascriptreact = use_standard_web_dev,
+          typescriptreact = use_standard_web_dev,
           svelte = use_prettier,
           css = use_prettier,
           html = use_prettier,

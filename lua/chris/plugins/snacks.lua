@@ -103,6 +103,13 @@ return {
       desc = "Find Git Files",
     },
     {
+      "<leader>fG",
+      function()
+        Snacks.picker.git_diff()
+      end,
+      desc = "Find Git Diff (Hunks)",
+    },
+    {
       "<leader>fm",
       function()
         Snacks.picker.marks({
