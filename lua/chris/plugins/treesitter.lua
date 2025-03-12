@@ -19,6 +19,7 @@ return {
           "markdown",
           "markdown_inline",
           "rust",
+          "yaml",
         },
         auto_install = false,
 
