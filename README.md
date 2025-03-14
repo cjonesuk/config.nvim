@@ -22,6 +22,29 @@ Personal Neovim configuration
 - snacks.nvim (currently layygit integration)
 - typescript-tools for improved language server support
 
+## Installation - Windows
+
+### Install Zig (or a C compiler)
+
+```
+winget install zig.zig
+```
+
+### Install ImageMagick
+
+```
+winget install ImageMagick.Q16-HDRI
+```
+
+### Clone neovim configuration
+
+```PowerShell
+cd $env:USERPROFILE\AppData\Local
+git clone https://github.com/cjonesuk/config.nvim nvim
+cd nvim
+nvim .
+```
+
 ## Todo
 
 - Investigate debugging setup
