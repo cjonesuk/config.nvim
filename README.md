@@ -19,15 +19,42 @@ Personal Neovim configuration
 - nvim-lspconfig
 - mason, mason-lspconfig and mason tool installer
 - blink.cmp for completions
-- snacks.nvim (currently layygit integration)
+- snacks.nvim
 - typescript-tools for improved language server support
 
 ## Installation - Windows
+
+### Windows Directories
+
+Config: `~/AppData/Local/nvim`
+Data: `~/AppData/Local/nvim-data`
 
 ### Install Zig (or a C compiler)
 
 ```
 winget install zig.zig
+```
+
+OR
+
+```
+winget install Kitware.cmake
+```
+
+### Install ripgrep
+
+[ripgrep GitHub repo](https://github.com/BurntSushi/ripgrep)
+
+```
+winget install BurntSushi.ripgrep.MSVC
+```
+
+### Install fd
+
+[fd GitHub repo](https://github.com/sharkdp/fd)
+
+```
+winget install sharkdp.fd
 ```
 
 ### Install ImageMagick
@@ -38,7 +65,7 @@ winget install ImageMagick.Q16-HDRI
 
 ### Clone neovim configuration
 
-```PowerShell
+```
 cd $env:USERPROFILE\AppData\Local
 git clone https://github.com/cjonesuk/config.nvim nvim
 cd nvim
@@ -47,6 +74,7 @@ nvim .
 
 ## Todo
 
+- C# LSP and tooling
 - Investigate debugging setup
 
 ## Dependencies
@@ -59,23 +87,11 @@ nvim .
 
 - [Luals](https://luals.github.io/#neovim-install)
 
-### Telescope
-
-- [Telescope FZF Native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
-- [CMake](https://cmake.org/download/)
-- [fd](https://github.com/sharkdp/fd)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-
 ### Colour Scheme
 
-- [Kanagawa](https://github.com/rebelot/kanagawa.nvim) (currently active)
+- [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
 
 ## Directories
-
-### Windows
-
-Config: `~/AppData/Local/nvim`
-Data: `~/AppData/Local/nvim-data`
 
 ### Mac OS
 
