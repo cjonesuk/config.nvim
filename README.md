@@ -72,6 +72,15 @@ cd nvim
 nvim .
 ```
 
+## Installation - Mac OS
+
+### Mac OS Directories
+
+Config: `~/.config/nvim`
+Data: `~/.local/share/nvim`
+
+TODO: Installation steps
+
 ## Todo
 
 - C# LSP and tooling
@@ -90,10 +99,3 @@ nvim .
 ### Colour Scheme
 
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
-
-## Directories
-
-### Mac OS
-
-Config: `~/.config/nvim`
-Data: `~/.local/share/nvim`
